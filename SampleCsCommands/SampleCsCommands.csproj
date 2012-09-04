@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3E22E56-11B6-4F56-A2FE-7EE0BBFAF3CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SampleCsCommands</RootNamespace>
+    <AssemblyName>SampleCsCommands</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Rhino_DotNET">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Rhinoceros 4.0\System\Rhino_DotNET.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SampleCsBlock.cs" />
+    <Compile Include="SampleCsBrepBox.cs" />
+    <Compile Include="SampleCsColoredMesh.cs" />
+    <Compile Include="SampleCsDeleteBlock.cs" />
+    <Compile Include="SampleCsDrawArrowhead.cs" />
+    <Compile Include="SampleCsDrawCircle.cs" />
+    <Compile Include="SampleCsBox.cs" />
+    <Compile Include="SampleCsCapture.cs" />
+    <Compile Include="SampleCsCommandsPlugIn.cs" />
+    <Compile Include="SampleCsCommandsPlugInAttributes.cs" />
+    <Compile Include="SampleCsCommandsCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleCsExplodeHatch.cs" />
+    <Compile Include="SampleCsExplodePolysrf.cs" />
+    <Compile Include="SampleCsExtractEdgeFaces.cs" />
+    <Compile Include="SampleCsFieldOfView.cs" />
+    <Compile Include="SampleCsLeaderTest.cs" />
+    <Compile Include="SampleCsMeshVolume.cs" />
+    <Compile Include="SampleCsPickSurfaceEdge.cs" />
+    <Compile Include="SampleCsPrintCurvePoints.cs" />
+    <Compile Include="SampleCsPrintNamedCPlanes.cs" />
+    <Compile Include="SampleCsPrintSurfacePoints.cs" />
+    <Compile Include="SampleCsRectangularLightMesh.cs" />
+    <Compile Include="SampleCsRenameBlock.cs" />
+    <Compile Include="SampleCsSurfaceDirection.cs" />
+    <Compile Include="SampleCsSweep1.cs" />
+    <Compile Include="SampleCsTwistedCube.cs" />
+    <Compile Include="SampleCsViewportSize.cs" />
+    <Compile Include="SampleCsZoomExtents.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>Copy "$(TargetPath)" "$(TargetDir)\$(ProjectName).rhp"
+Erase "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
