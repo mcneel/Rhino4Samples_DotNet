@@ -9,6 +9,7 @@ To build the Rhino 4.0 .NET SDK SDK Samples, you are going to need:
 * Rhino 4.0  - (http://www.rhino3d.com)
 * Microsoft Visual C# 2005, or
 * Microsoft Visual Basic 2005
+
 (Note, you can use the free Microsoft Visual Studio Express editions)
 
 Getting Help
