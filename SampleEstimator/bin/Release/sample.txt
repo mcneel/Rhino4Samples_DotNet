@@ -1,0 +1,27 @@
+; This is a sample "tag" database file
+;
+; <id>;<description>;<type>
+; where types are:
+;   1 = linear
+;   2 = area
+;   3 = volume
+;   4 = item
+
+10001;Pipe;1
+10002;Wire;1
+10003;Cable;1
+10004;Duct;1
+20001;Paint;2
+20002;Plywood;2
+20003;Stucco;2
+20004;Marble;2
+20005;Granite;2
+30001;Concrete;3
+30002;Insulation;3
+30003;Soil;3
+30004;Gravel;3
+40001;Water Meter;4
+40002;Stop Sign;4
+40003;Light Switch;4
+40004;Thermostat;4
+40005;Light Fixture;4
