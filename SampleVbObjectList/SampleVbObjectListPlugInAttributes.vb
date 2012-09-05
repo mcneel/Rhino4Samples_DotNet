@@ -4,7 +4,7 @@
 ''' Any string will work for these attributes, so if you don't have a fax
 ''' number it is OK to enter something like "none"
 '''</summary>
-Public Class SampleVbObjectWatcherPlugInAttributes
+Public Class SampleVbObjectListPlugInAttributes
   Inherits RMA.Rhino.MRhinoPlugInAttributes
 
   Public Overrides Function Address() As String
