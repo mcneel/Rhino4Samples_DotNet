@@ -19,6 +19,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -53,6 +55,7 @@
     <Compile Include="SampleCsCommandsPlugInAttributes.cs" />
     <Compile Include="SampleCsCommandsCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SampleCsDynamicTransform.cs" />
     <Compile Include="SampleCsExplodeHatch.cs" />
     <Compile Include="SampleCsExplodePolysrf.cs" />
     <Compile Include="SampleCsExtractEdgeFaces.cs" />
@@ -68,6 +71,7 @@
     <Compile Include="SampleCsRectangularLightMesh.cs" />
     <Compile Include="SampleCsRenameBlock.cs" />
     <Compile Include="SampleCsSaveRestoreView.cs" />
+    <Compile Include="SampleCsSortPoints.cs" />
     <Compile Include="SampleCsSurfaceDirection.cs" />
     <Compile Include="SampleCsSweep1.cs" />
     <Compile Include="SampleCsTrimmedPlane.cs" />
