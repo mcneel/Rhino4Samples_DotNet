@@ -56,6 +56,7 @@
     <Compile Include="SampleCsExplodeHatch.cs" />
     <Compile Include="SampleCsExplodePolysrf.cs" />
     <Compile Include="SampleCsExtractEdgeFaces.cs" />
+    <Compile Include="SampleCsFaceWithHole.cs" />
     <Compile Include="SampleCsFieldOfView.cs" />
     <Compile Include="SampleCsLeaderTest.cs" />
     <Compile Include="SampleCsMeshVolume.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="SampleCsSaveRestoreView.cs" />
     <Compile Include="SampleCsSurfaceDirection.cs" />
     <Compile Include="SampleCsSweep1.cs" />
+    <Compile Include="SampleCsTrimmedPlane.cs" />
     <Compile Include="SampleCsTwistedCube.cs" />
     <Compile Include="SampleCsViewportSize.cs" />
     <Compile Include="SampleCsZoomExtents.cs" />
