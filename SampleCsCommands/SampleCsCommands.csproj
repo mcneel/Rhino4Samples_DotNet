@@ -64,6 +64,7 @@
     <Compile Include="SampleCsPrintCurvePoints.cs" />
     <Compile Include="SampleCsPrintNamedCPlanes.cs" />
     <Compile Include="SampleCsPrintSurfacePoints.cs" />
+    <Compile Include="SampleCsReadPointsFile.cs" />
     <Compile Include="SampleCsRectangularLightMesh.cs" />
     <Compile Include="SampleCsRenameBlock.cs" />
     <Compile Include="SampleCsSaveRestoreView.cs" />
