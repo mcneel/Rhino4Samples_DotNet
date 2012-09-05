@@ -65,6 +65,7 @@
     <Compile Include="SampleCsPrintSurfacePoints.cs" />
     <Compile Include="SampleCsRectangularLightMesh.cs" />
     <Compile Include="SampleCsRenameBlock.cs" />
+    <Compile Include="SampleCsSaveRestoreView.cs" />
     <Compile Include="SampleCsSurfaceDirection.cs" />
     <Compile Include="SampleCsSweep1.cs" />
     <Compile Include="SampleCsTwistedCube.cs" />
