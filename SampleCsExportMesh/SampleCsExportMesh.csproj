@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{AC1A2EB0-435E-44C8-AB40-A5E0EFDCB9A3}</ProjectGuid>
+    <ProjectGuid>{F589AED7-1292-4BF0-BCFE-94B979D1E961}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SampleExportMesh</RootNamespace>
-    <AssemblyName>SampleExportMesh</AssemblyName>
+    <RootNamespace>SampleCsExportMesh</RootNamespace>
+    <AssemblyName>SampleCsExportMesh</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SampleExportMeshPlugIn.cs" />
-    <Compile Include="SampleExportMeshPlugInAttributes.cs" />
+    <Compile Include="SampleCsExportMeshPlugIn.cs" />
+    <Compile Include="SampleCsExportMeshPlugInAttributes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

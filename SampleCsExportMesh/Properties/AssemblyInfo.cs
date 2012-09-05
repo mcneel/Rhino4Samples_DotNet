@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SampleExportMesh")]
-[assembly: AssemblyDescription("SampleExportMesh")]
+[assembly: AssemblyTitle("SampleCsExportMesh")]
+[assembly: AssemblyDescription("SampleCsExportMesh")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Robert McNeel & Associates")]
-[assembly: AssemblyProduct("SampleExportMesh")]
+[assembly: AssemblyProduct("SampleCsExportMesh")]
 [assembly: AssemblyCopyright("Copyright ©  2012, Robert McNeel & Associates")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f688cf9c-101b-4177-a865-391c3ce6ce47")]
+[assembly: Guid("b5c71b10-27f2-4a06-b538-072122012906")]
 
 // Version information for an assembly consists of the following four values:
 //

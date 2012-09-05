@@ -4,9 +4,9 @@
 /// Any string will work for these attributes, so if you don't have a fax
 /// number it is OK to enter something like "none"
 ///</summary>
-namespace SampleExportMesh
+namespace SampleCsExportMesh
 {
-  public class SampleExportMeshPlugInAttributes : RMA.Rhino.MRhinoPlugInAttributes
+  public class SampleCsExportMeshPlugInAttributes : RMA.Rhino.MRhinoPlugInAttributes
   {
     public override string Address()
     {

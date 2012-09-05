@@ -3,22 +3,22 @@ using System.Collections.Generic;
 using RMA.Rhino;
 using RMA.OpenNURBS;
 
-namespace SampleExportMesh
+namespace SampleCsExportMesh
 {
   ///<summary>
   /// Every Rhino.NET Plug-In must have one and only one MRhinoPlugIn derived
   /// class. DO NOT create an instance of this class. It is the responsibility
   /// of Rhino.NET to create an instance of this class and register it with Rhino.
   ///</summary>
-  public class SampleExportMeshPlugIn : RMA.Rhino.MRhinoFileExportPlugIn
+  public class SampleCsExportMeshPlugIn : RMA.Rhino.MRhinoFileExportPlugIn
   {
     OnMeshParameters _mesh_parameters;
     int _mesh_ui_style;
 
-    /// <summary>
+   /// <summary>
     /// Public constructor
     /// </summary>
-    public SampleExportMeshPlugIn()
+    public SampleCsExportMeshPlugIn()
     {
       _mesh_parameters = new OnMeshParameters();
       _mesh_ui_style = 0; // 0 = simple dialog 
@@ -29,26 +29,19 @@ namespace SampleExportMesh
     /// The Guid created by the project wizard is unique. You can create more Guids using
     /// the "Create Guid" tool in the Tools menu.
     /// </summary>
+    /// <returns>The id for this plug-in</returns>
     public override System.Guid PlugInID()
     {
-      return new System.Guid("{9f10dc93-e1f9-47bf-9a76-368fbe31618c}");
+      return new System.Guid("{de2ad9b2-8a6c-418a-9fc3-93162b789424}");
     }
 
-    /// <summary>
-    /// Plug-in name display string. This name is displayed by Rhino when
-    /// loading the plug-in, in the plug-in help menu, and in the Rhino 
-    /// interface for managing plug-ins.
-    /// </summary>
+    /// <returns>Plug-In name as displayed in the plug-in manager dialog</returns>
     public override string PlugInName()
     {
-      return "SampleExportMesh";
+      return "SampleCsExportMesh";
     }
 
-    /// <summary>
-    /// Plug-in version display string. This name is displayed by Rhino 
-    /// when loading the plug-in and in the Rhino interface for managing
-    /// plug-ins.
-    /// </summary>
+    ///<returns>Version information for this plug-in</returns>
     public override string PlugInVersion()
     {
       return "1.0.0.0";
@@ -80,6 +73,7 @@ namespace SampleExportMesh
       // TODO: Add plug-in cleanup code here.
     }
 
+
     /// <summary>
     /// When Rhino gets ready to display either the save or export file dialog,
     /// it calls AddFileType() once for each loaded file export plug-in.
@@ -98,7 +92,7 @@ namespace SampleExportMesh
       int rc = 0; // false
 
       // Are we saving or exporting?
-      bool bExport = options.Mode(IRhinoFileWriteOptions.ModeFlag.SelectedMode );
+      bool bExport = options.Mode(IRhinoFileWriteOptions.ModeFlag.SelectedMode);
       // Are we in interactive or scripted mode?
       bool bScript = options.Mode(IRhinoFileWriteOptions.ModeFlag.BatchMode);
 
@@ -119,17 +113,17 @@ namespace SampleExportMesh
 
       ArrayMRhinoObjectMesh meshes = new ArrayMRhinoObjectMesh(objects.Count);
       OnMeshParameters mesh_parameters = _mesh_parameters;
-      int mesh_ui_style = ( bScript ) ? 2 : _mesh_ui_style;
+      int mesh_ui_style = (bScript) ? 2 : _mesh_ui_style;
 
       // Get the meshes to save/export
       IRhinoCommand.result res = RhUtil.RhinoMeshObjects(objects.ToArray(), ref mesh_parameters, ref mesh_ui_style, ref meshes);
-      if ( res == IRhinoCommand.result.success)
+      if (res == IRhinoCommand.result.success)
       {
         if (mesh_ui_style >= 0 && mesh_ui_style <= 1)
           _mesh_ui_style = mesh_ui_style;
         _mesh_parameters = mesh_parameters;
       }
-      else 
+      else
       {
         if (bExport)
           RhUtil.RhinoApp().Print("No meshes to export.\n");
@@ -182,13 +176,12 @@ namespace SampleExportMesh
 
         rc = 1; // true
       }
-      catch(Exception e)
+      catch (Exception e)
       {
         RhUtil.RhinoApp().Print(string.Format("{0}\n", e.Message));
       }
 
       return rc;
     }
-
   }
 }
