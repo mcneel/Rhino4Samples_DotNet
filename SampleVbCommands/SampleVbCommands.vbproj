@@ -55,6 +55,7 @@
     <Import Include="System.Diagnostics" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SampleVbBrepPlaneSplit.vb" />
     <Compile Include="SampleVbCommandsPlugIn.vb" />
     <Compile Include="SampleVbCommandsPlugInAttributes.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
