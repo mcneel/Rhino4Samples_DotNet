@@ -76,6 +76,7 @@
     <Compile Include="SampleVbDumpInstanceDefinitionTree.vb" />
     <Compile Include="SampleVbDupEdge.vb" />
     <Compile Include="SampleVbOrient.vb" />
+    <Compile Include="SampleVbRayShooter.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
