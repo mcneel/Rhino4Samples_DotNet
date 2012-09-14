@@ -69,6 +69,7 @@
     <Compile Include="SampleCsPrintSurfacePoints.cs" />
     <Compile Include="SampleCsReadPointsFile.cs" />
     <Compile Include="SampleCsRectangularLightMesh.cs" />
+    <Compile Include="SampleCsRemapTextures.cs" />
     <Compile Include="SampleCsRenameBlock.cs" />
     <Compile Include="SampleCsSaveRestoreView.cs" />
     <Compile Include="SampleCsSortPoints.cs" />
