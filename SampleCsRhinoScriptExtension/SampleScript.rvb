@@ -1,0 +1,31 @@
+Option Explicit
+
+Sub TestSampleCsRhinoScriptExtension
+  Dim objPlugIn, arrPoint, arrPoints, arrObjects, strObject
+ 
+  On Error Resume Next
+  Set objPlugIn = Rhino.GetPlugInObject("SampleCsRhinoScriptExtension")
+  If Err Then
+    MsgBox Err.Description
+    Exit Sub
+  End If
+ 
+  arrPoint = Rhino.GetPoint
+  If IsArray(arrPoint) Then    
+    strObject = objPlugIn.AddPoint(arrPoint)
+    If Not IsNull(strObjects) Then
+      Call Rhino.Print(strObject)
+    End If
+  End If
+  
+  arrPoints = Rhino.GetPoints
+  If IsArray(arrPoints) Then    
+    arrObjects = objPlugIn.AddPoints(arrPoints)
+    If IsArray(arrObjects) Then
+      For Each strObject In arrObjects
+        Call Rhino.Print(strObject)
+      Next
+    End If
+  End If  
+   
+End Sub
