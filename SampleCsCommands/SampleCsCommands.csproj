@@ -64,6 +64,7 @@
     <Compile Include="SampleCsLeaderTest.cs" />
     <Compile Include="SampleCsMeshVolume.cs" />
     <Compile Include="SampleCsPickSurfaceEdge.cs" />
+    <Compile Include="SampleCsPrePostSelect.cs" />
     <Compile Include="SampleCsPrintCurvePoints.cs" />
     <Compile Include="SampleCsPrintNamedCPlanes.cs" />
     <Compile Include="SampleCsPrintSurfacePoints.cs" />
