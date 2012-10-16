@@ -26,7 +26,7 @@ namespace SampleCsCommands
     ///<returns>The command name as it appears on the Rhino command line</returns>
     public override string EnglishCommandName()
     {
-      return "SamplePrePostSelect";
+      return "SampleCsPrePostSelect";
     }
 
     ///<summary> This gets called when when the user runs this command.</summary>
