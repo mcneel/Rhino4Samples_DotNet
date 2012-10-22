@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SampleCsAddDeleteMesh.cs" />
     <Compile Include="SampleCsBlock.cs" />
     <Compile Include="SampleCsBrepBox.cs" />
     <Compile Include="SampleCsColoredMesh.cs" />
