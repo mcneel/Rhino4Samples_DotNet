@@ -74,6 +74,7 @@
     <Compile Include="SampleCsRemapTextures.cs" />
     <Compile Include="SampleCsRenameBlock.cs" />
     <Compile Include="SampleCsSaveRestoreView.cs" />
+    <Compile Include="SampleCsSelectByName.cs" />
     <Compile Include="SampleCsSortPoints.cs" />
     <Compile Include="SampleCsSurfaceDirection.cs" />
     <Compile Include="SampleCsSweep1.cs" />
