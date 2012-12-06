@@ -59,6 +59,7 @@
     <Compile Include="SampleCsDynamicTransform.cs" />
     <Compile Include="SampleCsExplodeHatch.cs" />
     <Compile Include="SampleCsExplodePolysrf.cs" />
+    <Compile Include="SampleCsExportOff.cs" />
     <Compile Include="SampleCsExtractEdgeFaces.cs" />
     <Compile Include="SampleCsFaceWithHole.cs" />
     <Compile Include="SampleCsFieldOfView.cs" />
