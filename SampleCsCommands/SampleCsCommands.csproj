@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SampleCsAddDeleteMesh.cs" />
+    <Compile Include="SampleCsAnimator.cs" />
     <Compile Include="SampleCsBlock.cs" />
     <Compile Include="SampleCsBrepBox.cs" />
     <Compile Include="SampleCsColoredMesh.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="SampleCsFieldOfView.cs" />
     <Compile Include="SampleCsLeaderTest.cs" />
     <Compile Include="SampleCsMeshVolume.cs" />
+    <Compile Include="SampleCsMoveObject.cs" />
     <Compile Include="SampleCsPickSurfaceEdge.cs" />
     <Compile Include="SampleCsPrePostSelect.cs" />
     <Compile Include="SampleCsPrintCurvePoints.cs" />
