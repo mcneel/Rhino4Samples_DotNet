@@ -61,6 +61,7 @@
     <Compile Include="SampleCsExplodeHatch.cs" />
     <Compile Include="SampleCsExplodePolysrf.cs" />
     <Compile Include="SampleCsExportOff.cs" />
+    <Compile Include="SampleCsExportSolidsToSat.cs" />
     <Compile Include="SampleCsExtractEdgeFaces.cs" />
     <Compile Include="SampleCsFaceWithHole.cs" />
     <Compile Include="SampleCsFieldOfView.cs" />
