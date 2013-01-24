@@ -45,7 +45,13 @@ namespace SampleCsCommands
       OnCurve[] curves = null;
       On3dPointArray points = null;
       bool rc = RhUtil.RhinoIntersectBreps(B0, B1, context.m_doc.AbsoluteTolerance(), out curves, out points);
-      if (!rc)
+      if (
+        false == rc        || 
+        null == curves     ||
+        0 == curves.Length ||
+        null == points     ||
+        0 == curves.Length 
+        )
       {
         RhUtil.RhinoApp().Print("No intersections found.\n");
         return IRhinoCommand.result.nothing;
